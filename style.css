@@ -29,9 +29,6 @@
   flex-grow: 0;
   cursor: pointer;
 }
-.square.even{
-  background-color: rgb(7, 15, 96);
-}
-.square.odd{
-  background-color: darkgreen;
+.clicked{
+  background-color: lightskyblue;
 }

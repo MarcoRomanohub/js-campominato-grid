@@ -11,8 +11,13 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 - con difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
 
 ## Svolgimento
-1. 
-2. 
-3. 
-4. 
-5. 
+1. seleziono container e bottone e li salvo in una costante
+2. resetto
+3. faccio un ciclo di 100 ripetizioni
+4. ad ogni ciclo creo un quadrato e lo stampo sulla griglia
+5. al click di ogni quadrato aggiungo una classe clicked con colore azzurro e faccio console log num quadrato
+
+## Creazione quadrato 
+1. creo l'elemento html
+2. associo la classe square
+3. associo il valore (numero) 

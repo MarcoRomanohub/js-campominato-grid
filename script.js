@@ -1,16 +1,38 @@
 const gridContainer = document.querySelector('.grid-container');
+const btnStart = document.querySelector('.btn-start');
 
-reset()
+const input = document.querySelector('.form-select');
+console.log(input);
+let difficultyLevel;
 
-
-for(i =1; i <= 100; i++){
-  const square = getSquare(i);
-  console.log(square);
-  gridContainer.append(square);
-}
-
+input.addEventListener('click', function(){
+  difficultyLevel = input.value;
+  console.log(difficultyLevel);
+});
+btnStart.addEventListener('click', init);
 
 // FUNCTIONS ////////
+
+function init(){
+  reset();
+  if(difficultyLevel == 1){
+    for(let i =1; i <= 100; i++){
+      const square = getSquare(i);
+      gridContainer.append(square);
+    }
+  }else if(difficultyLevel == 2){
+    for(let i =1; i <= 81; i++){
+      const square = getSquare(i);
+      gridContainer.append(square);
+    }
+  }else{
+    for(let i =1; i <= 49; i++){
+      const square = getSquare(i);
+      gridContainer.append(square);
+    }
+  }
+  
+}
 
 function getSquare(numero){
   const sq = document.createElement('div');
@@ -37,7 +59,7 @@ function getSquare(numero){
     this.classList.toggle('clicked');
 
   })
-  
+
   return sq;
 }
 

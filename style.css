@@ -10,7 +10,7 @@
 
 .grid-container{
   background-color: brown;
-  width: 720px;
+  width: 740px;
   aspect-ratio: 1;
 }
 .grid-container button{
@@ -20,8 +20,8 @@
 .square{
   width: 70px;
   height: 70px;
-  background-color: cadetblue;
-  border: 1px solid white;
+  background-color: brown;
+  border: 2px solid white;
   display: flex;
   justify-content: center;
   align-items: center;

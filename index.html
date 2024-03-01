@@ -14,13 +14,17 @@
     <div class="main-wrapper d-flex justify-content-center align-items-center">
         <div class="titolo">
             <h1>Campo Minato</h1>
-            <h2>Seleziona la difficoltà : <select class="form-select form-select-lg ">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select></h2>
+            <h2>Seleziona la difficoltà :</h2>
+            <select class="form-select" id="level" >
+                <option value="0">Easy</option>
+                <option value="1">Hard</option>
+                <option value="2">Crazy</option>
+            </select>
+            <button class="btn-start">START</button>
         </div>
-        <div class="grid-container d-flex flex-wrap ">
+        <div class="grid-container d-flex justify-content-center align-items-center ">
+            <h1>Seleziona un livello difficoltà e premi Start</h1>
+            <h1 class="endMessage"></h1>
             <!-- <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -121,7 +125,6 @@
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div> -->
-            <button class="btn-start">START</button>
         </div>
 
     </div>

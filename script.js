@@ -1,34 +1,41 @@
 const gridContainer = document.querySelector('.grid-container');
 const btnStart = document.querySelector('.btn-start');
+const levelSelect = document.getElementById('level');
 
-const input = document.querySelector('.form-select');
-console.log(input);
-let difficultyLevel;
 
-input.addEventListener('click', function(){
-  difficultyLevel = input.value;
+let difficultyLevel = levelSelect.value;
+console.log(difficultyLevel);
+// TODO: POSSO RACCHIUDERE TUTTO IN UNA FUNZIONE?
+levelSelect.addEventListener('click', function(){
+  difficultyLevel = levelSelect.value;
+  console.log(difficultyLevel);
+});
+btnStart.addEventListener('click', function(){
+  difficultyLevel = levelSelect.value;
   console.log(difficultyLevel);
 });
 btnStart.addEventListener('click', init);
-
 // FUNCTIONS ////////
 
 function init(){
   reset();
-  if(difficultyLevel == 1){
+  if(difficultyLevel == 0){
     for(let i =1; i <= 100; i++){
       const square = getSquare(i);
       gridContainer.append(square);
+      square.classList.add('square100')
     }
-  }else if(difficultyLevel == 2){
+  }else if(difficultyLevel == 1){
     for(let i =1; i <= 81; i++){
       const square = getSquare(i);
       gridContainer.append(square);
+      square.classList.add('square81')
     }
   }else{
     for(let i =1; i <= 49; i++){
       const square = getSquare(i);
       gridContainer.append(square);
+      square.classList.add('square49')
     }
   }
   

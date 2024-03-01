@@ -7,27 +7,38 @@
   position: absolute;
   left: 0;
 }
-
-.grid-container{
-  background-color: brown;
-  width: 740px;
-  aspect-ratio: 1;
+h1{
+  text-align: center;
 }
-.grid-container button{
-  width: 100%;
+.grid-container{
+  width: 500px;
+  aspect-ratio: 1;
+  flex-wrap: wrap;
 }
 
 .square{
-  width: 70px;
-  height: 70px;
-  background-color: brown;
-  border: 2px solid white;
+  /* width: 70px;
+  height: 70px; */
+  /* background-color: brown; */
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   flex-grow: 0;
   cursor: pointer;
+}
+.square100{
+  width: calc(96% / 10);
+  height: calc(96% / 10);
+}
+.square81{
+  width: calc(96% / 9);
+  height: calc(96% / 9);
+}
+.square49{
+  width: calc(97% / 7);
+  height: calc(97% / 7);
 }
 .clicked{
   background-color: lightskyblue;
